@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <title>Yummy</title>
+</head>
+<body class=" bg-dark" >
+  <nav class="navbar bg-body-tertiary position-fixed">
+    <div class="">
+      <div class=" nav-header d-flex flex-column justify-content-between py-4 text-center px-2 ">
+        <img class="logo position-fixed top-0 pt-4" src="imgs/logo.png" alt="" srcset="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>               
+          <div class="position-fixed bottom-0">
+            <i class="fa-solid fa-globe d-block"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </div>
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header bg-dark text-white">
+        </div>
+        <div class="offcanvas-body  bg-dark text-white">
+          <ul class=" animate__animated animate__slideInUp animate__delay-2s navbar-nav text-white justify-content-start flex-grow-1 pe-2">
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="search.html">Search</a>
+            </li>
+            <li class="nav-item cursor-pointer" >
+              <a class="nav-link text-white" aria-current="page" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" aria-current="page" href="area.html">Area</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" aria-current="page" href="ingredients.html">Ingredients</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="nav-footer position-fixed bottom-0">
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="footer ">
+                <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+        </div>
+        <div class="nav-header position-absolute top-0 end-0 bottom-0  d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+          <img class="logo" src="imgs/logo.png" alt="" srcset="">
+          <button type="button" class="btn-close fs-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div>
+              <i class="fa-solid fa-globe d-block"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+          </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<div id="results" class="row container m-auto pt-3"></div>
+<div id="meal-details" class="d-none "></div>
+<div id="ingredients" class=" container m-auto row pt-3 "></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" ></script>
+</body>
+</html>
